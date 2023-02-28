@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".Ejercicio2">
 
+    <EditText
+        android:id="@+id/txtBoxNombre"
+        android:layout_width="286dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Nombre empleado"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxSal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtBoxSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Salario base"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxNombre" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="5dp"
+        android:text="Calcular Salario Neto"
+        app:layout_constraintBottom_toTopOf="@+id/txtResSal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxSal" />
+
+    <TextView
+        android:id="@+id/txtResSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:text="Res"
+        android:textColor="#9C27B0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
 </androidx.constraintlayout.widget.ConstraintLayout>

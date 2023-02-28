@@ -111,13 +111,13 @@
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="25dp"
         android:text="Calcular Promedio"
-        app:layout_constraintBottom_toTopOf="@+id/txtViewRes"
+        app:layout_constraintBottom_toTopOf="@+id/txtResProm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBoxN5" />
 
     <TextView
-        android:id="@+id/txtViewRes"
+        android:id="@+id/txtResProm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"

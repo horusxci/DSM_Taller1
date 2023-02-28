@@ -5,18 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.util.Log
-
-lateinit var btnPromedio: Button
+import java.text.DecimalFormat
 
 class Ejercicio1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio1)
 
-        btnPromedio = findViewById(R.id.btnPromedio)
-
-
+        var btnPromedio:Button = findViewById(R.id.btnPromedio)
 
         btnPromedio.setOnClickListener{
             var n1 = findViewById<EditText>(R.id.txtBoxN1).text.toString().toFloat()
@@ -26,9 +22,9 @@ class Ejercicio1 : AppCompatActivity() {
             var n5 = findViewById<EditText>(R.id.txtBoxN5).text.toString().toFloat()
 
             var prom = ((n1 + n2 + n3 + n4 + n5)/5.0)
+            var aprob = if(prom >= 6.0) "Aprobada" else "Reprobada"
 
-
-            findViewById<TextView>(R.id.txtViewRes).text ="Nota Promedio: " + prom.toString()
+            findViewById<TextView>(R.id.txtResProm).text ="Nota Promedio: " + DecimalFormat("#.##").format(prom) + " [" + aprob + "]"
         }
     }
 
