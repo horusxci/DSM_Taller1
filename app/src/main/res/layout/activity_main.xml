@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Desafio 1 DSM \n Utlize el menu para\n mostrar los ejercicios"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="#673AB7"
         android:textSize="20sp"

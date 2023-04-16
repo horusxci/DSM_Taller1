@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">DSM Desafio 1</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">Ingles</string>
+
+    <!--Values for app 1-->
+    <string name="placeholder_grade">Nota</string>
+    <string name="placeholder_name">Nombre</string>
+    <string name="btn_calc_avg">Calcular Promedio</string>
+    <string name="msg_approved">Aprobado</string>
+    <string name="msg_failed">Reprobado</string>
+    <string name="msg_avg">"El promedio es: "</string>
+
+
+    <!--Values for menu-->
+    <string name="menu_op1">Ejercicio 1</string>
+    <string name="menu_op2">Ejercicio 2</string>
+    <string name="menu_op3">Ejercicio 3</string>
+    <string name="menu_config">Configuracion</string>
+    <string name="txt_language">Idioma</string>
+
+
 </resources>

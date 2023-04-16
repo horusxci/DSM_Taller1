@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import java.text.DecimalFormat
 
+
 class Ejercicio1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,9 +23,9 @@ class Ejercicio1 : AppCompatActivity() {
             var n5 = findViewById<EditText>(R.id.txtBoxN5).text.toString().toFloat()
 
             var prom = ((n1 + n2 + n3 + n4 + n5)/5.0)
-            var aprob = if(prom >= 6.0) "Aprobada" else "Reprobada"
+            var aprob = if(prom >= 6.0) resources.getString(R.string.msg_approved) else resources.getString(R.string.msg_failed)
 
-            findViewById<TextView>(R.id.txtResProm).text ="Nota Promedio: " + DecimalFormat("#.##").format(prom) + " [" + aprob + "]"
+            findViewById<TextView>(R.id.txtResProm).text =resources.getString(R.string.msg_avg) + DecimalFormat("#.##").format(prom) + " [" + aprob + "]"
         }
     }
 

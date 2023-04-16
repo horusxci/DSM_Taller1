@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSM Assignment 1</string>
+    <string name="lang_es">Spanish</string>
+    <string name="lang_en">English</string>
+
+    <!--Values for app 1-->
+    <string name="placeholder_grade">Grade</string>
+    <string name="placeholder_name">Name</string>
+    <string name="btn_calc_avg">Calculate Average</string>
+    <string name="msg_approved">Approved</string>
+    <string name="msg_failed">Failed</string>
+    <string name="msg_avg">"The average is: "</string>
+
+    <!--Values for menu-->
+    <string name="menu_op1">Application 1</string>
+    <string name="menu_op2">Application 2</string>
+    <string name="menu_op3">Application 3</string>
+    <string name="menu_config">Settings</string>
+    <string name="txt_language">Language</string>
+</resources>
