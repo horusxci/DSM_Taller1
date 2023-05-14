@@ -30,14 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, Ejercicio2::class.java)
                 startActivity(intent)
             }
-            R.id.menuOp3-> {
-                val intent = Intent(this, Ejercicio3::class.java)
-                startActivity(intent)
-            }
-            R.id.menuConfig-> {
-                val intent = Intent(this, Config::class.java)
-                startActivity(intent)
-            }
+
         }
         startActivity(intent)
 
